@@ -15,5 +15,5 @@ All css style variables and the structure of folders is prefixed by:
 
 <p align="center">
   <img src="readme-screenshots/about.jpg" >
-  <img src="readme-screenshots/company.jpg">
+  <img src="readme-screenshots/company.png">
 </p>
