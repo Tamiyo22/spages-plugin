@@ -1,16 +1,14 @@
 # frozen_string_literal: true
 
-# name: new-page
-# about: Demonstrate adding a new static page with a Discourse plugin
-# version: 0.1
-# authors: James Kiesel (gdpelican)
+# name: custom stem-away pages
+# about: A plugin for creating custom pages
+# version: 0.4
+# authors: James Kiesel (gdpelican), Keegan George (stalliondigital)
 register_asset "stylesheets/stemaway-pages-styles.scss"
 after_initialize do
   Discourse::Application.routes.prepend do
-    get "/pages/about" => "static#about"
-  end
-  Discourse::Application.routes.prepend do
-    get "/pages/company" => "static#company"
+    get "/home" => "static#about"
+    get "/company-portal" => "static#company"
   end
 
   class ::StaticController < ApplicationController

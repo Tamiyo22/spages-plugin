@@ -1,4 +1,4 @@
 export default function() {
-  this.route("staticAbout", { path: "/pages/about", resetNamespace: true })
-  this.route("staticCompany", { path: "/pages/company", resetNamespace: true })
+  this.route("staticAbout", { path: "/home", resetNamespace: true })
+  this.route("staticCompany", { path: "/company-portal", resetNamespace: true })
 }
